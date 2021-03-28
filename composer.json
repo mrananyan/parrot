@@ -1,7 +1,9 @@
 {
     "name": "mrananyan/parrot",
     "description": "An long polling stack for PHP-based real-time applications",
+    "keywords": ["queue", "long", "polling", , "poll", "realtime"],
     "type": "library",
+    "homepage": "https://github.com/mrananyan/parrot",
     "require": {
         "predis/predis": "1.1.6"
     },
@@ -15,7 +17,6 @@
             "email": "ananyan@dr.com"
         }
     ],
-    "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
             "Parrot\\": "src/Parrot"
