@@ -4,6 +4,11 @@ An long polling stack for PHP-based real-time applications
 # Requirements #
 * Redis 
 
+# Installation #
+```bash
+composer require mrananyan/parrot
+```
+
 # How setup #
 0. Configuration
 
