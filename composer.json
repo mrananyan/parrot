@@ -15,7 +15,7 @@
             "email": "ananyan@dr.com"
         }
     ],
-    "minimum-stability": "alpha",
+    "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
             "Parrot\\": "src/Parrot"
