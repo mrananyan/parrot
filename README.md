@@ -1,6 +1,9 @@
 # Parrot #
 An long polling stack for PHP-based real-time applications
 
+# Demo #
+https://github.com/mrananyan/parrot_demo
+
 # Requirements #
 * Redis 
 
