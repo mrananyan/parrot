@@ -1,7 +1,7 @@
 {
     "name": "mrananyan/parrot",
     "description": "An long polling stack for PHP-based real-time applications",
-    "keywords": ["queue", "long", "polling", , "poll", "realtime"],
+    "keywords": ["queue", "long", "polling", "poll", "realtime"],
     "type": "library",
     "homepage": "https://github.com/mrananyan/parrot",
     "require": {
