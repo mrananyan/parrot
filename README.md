@@ -6,7 +6,7 @@ An long polling stack for PHP-based real-time applications
 
 # Installation #
 ```bash
-composer require mrananyan/parrot
+composer require mrananyan/parrot:1.0.0
 ```
 
 # How setup #
