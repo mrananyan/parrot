@@ -1,0 +1,24 @@
+{
+    "name": "mrananyan/parrot",
+    "description": "An long polling stack for PHP-based real-time applications",
+    "type": "library",
+    "require": {
+        "predis/predis": "1.1.6"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Sargis Ananyan",
+            "email": "ananyan@dr.com"
+        }
+    ],
+    "minimum-stability": "alpha",
+    "autoload": {
+        "psr-4": {
+            "Parrot\\": "src/Parrot"
+        }
+    }
+}
