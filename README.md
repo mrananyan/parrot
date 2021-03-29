@@ -1,11 +1,17 @@
 # Parrot #
-An long polling stack for PHP-based real-time applications
+An Facebook like long polling stack for PHP-based real-time applications
+
+[logo]: logo.png "Parrot"
 
 # Demo #
-https://github.com/mrananyan/parrot_demo
+[Demo app](https://lp.hotdot.me/)
+[Demo app source](https://github.com/mrananyan/parrot_demo)
+
 
 # Requirements #
 * Redis 
+* PHP-FPM
+* Nginx
 
 # Installation #
 ```bash
@@ -19,7 +25,7 @@ If you want to connect via TCP (Recommended for remote server)
 ```php
 $parameters = [
                   'scheme' => 'tcp',
-                  'host'   => '10.0.0.1',
+                  'host'   => '127.0.0.1',
                   'port'   => 6379,
               ];
 ```
