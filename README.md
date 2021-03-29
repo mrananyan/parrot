@@ -1,7 +1,7 @@
 # Parrot #
 An Facebook like long polling stack for PHP-based real-time applications
 
-[logo]: logo.png "Parrot"
+[logo]: https://raw.githubusercontent.com/mrananyan/parrot/main/logo.png "Parrot"
 
 # Demo #
 [Demo app](https://lp.hotdot.me/)
