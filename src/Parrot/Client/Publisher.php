@@ -10,10 +10,10 @@ class Publisher {
     }
 
     /**
-     * @param $chanel
+     * @param $channel
      * @param $message
      */
-    public function set($chanel, $message){
-        $this->redis->publish($chanel, $message);
+    public function set($channel, $message){
+        $this->redis->publish($channel, $message);
     }
 }

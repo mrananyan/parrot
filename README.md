@@ -3,11 +3,6 @@ An easy to use Facebook like long polling stack for PHP-based real-time applicat
 
 <img height="150px" src="https://raw.githubusercontent.com/mrananyan/parrot/main/logo.png">
 
-# Demo #
-[Demo app](https://lp.hotdot.me/)
-[Demo app source](https://github.com/mrananyan/parrot_demo)
-
-
 # Requirements #
 * Redis 
 * PHP-FPM
@@ -15,7 +10,7 @@ An easy to use Facebook like long polling stack for PHP-based real-time applicat
 
 # Installation #
 ```bash
-composer require mrananyan/parrot:1.0.0
+composer require mrananyan/parrot
 ```
 
 # How setup #
@@ -39,19 +34,19 @@ $parameters = [
 ```
 
 1. Worker. 
-You can subscribe to many channels at once if you need. ('chanel1','chanel2' ...)
+You can subscribe to many channels at once if you need. ('channel1','channel2' ...)
 ```php
 use Parrot\Server\Worker;
 
 $parrotWorker = new Worker($parameters);
-$messages = $parrotWorker->subscribe('myChanel');
+$messages = $parrotWorker->subscribe('mychannel');
 echo json_encode($messages);
 ```
 
-2. Publisher. Send message to users who subscribed to myChanel chanel
+2. Publisher. Send message to users who subscribed to mychannel channel
 ```php
 use Parrot\Client\Publisher;
 
 $publisher = new Publisher($parameters);
-$publisher->set('myChanel', 'Your message string here');
+$publisher->set('mychannel', 'Your message string here');
 ```

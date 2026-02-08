@@ -4,6 +4,8 @@ namespace Parrot\Server;
 
 use Predis;
 
+header('X-polling: Parrot');
+
 class Worker {
 
     protected $redis;
@@ -26,7 +28,7 @@ class Worker {
                             'timestamp' => time(),
                             'type' => 'subscribe',
                             'data' => [
-                                'chanel' => $message->channel
+                                'channel' => $message->channel
                             ]
                         ];
                         break;
@@ -36,7 +38,7 @@ class Worker {
                             'timestamp' => time(),
                             'type' => 'message',
                             'data' => [
-                                'chanel' => $message->channel,
+                                'channel' => $message->channel,
                                 'message' => $message->payload
                             ]
                         ];
@@ -48,7 +50,7 @@ class Worker {
                 'timestamp' => time(),
                 'type' => 'reconnect',
                 'data' => [
-                    'chanel' => $message->channel
+                    'channel' => $message->channel
                 ]
             ];
         }
