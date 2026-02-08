@@ -4,8 +4,9 @@
     "keywords": ["queue", "long", "polling", "poll", "realtime"],
     "type": "library",
     "homepage": "https://github.com/mrananyan/parrot",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "require": {
+        "php": "^8.4",
         "predis/predis": "1.1.6"
     },
     "require-dev": {
