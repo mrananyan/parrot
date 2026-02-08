@@ -1,17 +1,9 @@
 {
     "name": "mrananyan/parrot",
-    "description": "An long polling stack for PHP-based real-time applications",
-    "keywords": ["queue", "long", "polling", "poll", "realtime"],
+    "description": "A long polling stack for PHP-based real-time applications",
+    "keywords": ["queue", "long-polling", "realtime", "redis"],
     "type": "library",
     "homepage": "https://github.com/mrananyan/parrot",
-    "version": "2.0.0",
-    "require": {
-        "php": "^8.4",
-        "predis/predis": "1.1.6"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "^9.5"
-    },
     "license": "GPL-3.0-or-later",
     "authors": [
         {
@@ -19,9 +11,13 @@
             "email": "ananyan@dr.com"
         }
     ],
+    "require": {
+        "php": "^8.1",
+        "predis/predis": "^3.3"
+    },
     "autoload": {
         "psr-4": {
-            "Parrot\\": "src/Parrot"
+            "Parrot\\": "src/Parrot/"
         }
     }
 }
